@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="adelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#008efb" />
+      <stop offset="100%" stop-color="#b16cea" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Modern Dark Squircle Base -->
+  <rect width="64" height="64" rx="18" fill="#07090e" stroke="url(#adelGrad)" stroke-width="2.5" />
+  
+  <!-- Subtle inner gradient glow -->
+  <circle cx="32" cy="32" r="24" fill="url(#adelGrad)" opacity="0.12" />
+
+  <!-- Bold Stylized Monogram "A" -->
+  <path
+    d="M32 13L48 49H40.2L36.3 39.5H27.7L23.8 49H16L32 13ZM32 23.8L29.2 33.2H34.8L32 23.8Z"
+    fill="url(#adelGrad)"
+    filter="url(#glow)"
+  />
+</svg>
